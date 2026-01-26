@@ -1,0 +1,11 @@
+SELECT
+	CAST(lpep_pickup_datetime AS DATE),
+	SUM(trip_distance) 
+FROM
+	public.green_taxi_data
+WHERE
+	trip_distance < 100
+group by
+	CAST(lpep_pickup_datetime AS DATE)
+ORDER BY
+	SUM(trip_distance) DESC

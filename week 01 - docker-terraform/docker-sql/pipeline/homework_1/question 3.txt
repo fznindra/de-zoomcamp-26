@@ -1,0 +1,7 @@
+SELECT 
+	COUNT(*) 
+FROM 
+	public.green_taxi_data
+WHERE
+	trip_distance <= 1
+

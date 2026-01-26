@@ -1,0 +1,14 @@
+SELECT
+	b."Zone",
+	COUNT(*) AS trip_count
+FROM
+	public.green_taxi_data AS a
+JOIN
+	public.taxi_zone_lookup AS b
+	ON a."PULocationID" = b."LocationID"
+WHERE
+	CAST(a."lpep_pickup_datetime" AS DATE) = '2025-11-18'
+GROUP BY
+	b."Zone"
+ORDER BY
+	trip_count DESC;
