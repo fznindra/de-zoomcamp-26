@@ -1,0 +1,21 @@
+step 1.
+
+execute flow 
+
+curl -v -X POST -H 'Content-Type: multipart/form-data' -F 'taxi=yellow' -F 'year=2021' -F 'month=03' 'http://localhost:8082/api/v1/main/executions/zoomcamp/04_postgres_taxi'
+
+
+step 2.
+
+query in postgres
+
+SELECT 
+	FILENAME,
+	COUNT(*) 
+FROM
+	public.yellow_tripdata
+WHERE
+	filename = 'yellow_tripdata_2021-03.csv'
+GROUP BY
+	FILENAME
+

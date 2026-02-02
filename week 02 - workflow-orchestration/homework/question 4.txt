@@ -1,0 +1,16 @@
+step 1.
+
+execute flow with backfill start_date end_date from 2020-01-01 - 2020-12-31
+
+curl -v -X POST -H 'Content-Type: multipart/form-data' -F 'taxi=green' 'http://localhost:8082/api/v1/main/executions/zoomcamp/05_postgres_taxi_scheduled'
+
+step 2.
+
+query in postgres
+
+SELECT 
+	COUNT(*) 
+FROM
+	public.green_tripdata
+
+

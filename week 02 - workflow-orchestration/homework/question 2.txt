@@ -1,0 +1,1 @@
+curl -v -X POST -H 'Content-Type: multipart/form-data' -F 'taxi=green' -F 'year=2020' -F 'month=04' 'http://localhost:8082/api/v1/main/executions/zoomcamp/04_postgres_taxi'
