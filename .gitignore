@@ -1,0 +1,4 @@
+
+# Ignore service account credentials
+*.json
+zoomcamp-*.json
