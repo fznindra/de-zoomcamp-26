@@ -1,0 +1,1 @@
+gsutil mb -l US gs://zoomcamp-2026-nytaxi-data

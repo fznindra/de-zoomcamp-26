@@ -1,0 +1,5 @@
+-- External Table
+SELECT * FROM nytaxi.external_yellow_2024 LIMIT 10;
+
+-- Materialized Table  
+SELECT * FROM nytaxi.yellow_2024_materialized LIMIT 10;

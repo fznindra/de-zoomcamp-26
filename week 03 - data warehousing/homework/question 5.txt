@@ -1,0 +1,4 @@
+CREATE OR REPLACE TABLE nytaxi.yellow_2024_partitioned
+PARTITION BY DATE(tpep_dropoff_datetime)
+CLUSTER BY VendorID AS
+SELECT * FROM nytaxi.yellow_2024_materialized;

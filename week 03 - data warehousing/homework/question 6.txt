@@ -1,0 +1,9 @@
+-- Query non-partitioned table
+SELECT DISTINCT VendorID 
+FROM nytaxi.yellow_2024_materialized
+WHERE tpep_dropoff_datetime BETWEEN '2024-03-01' AND '2024-03-15';
+
+-- Query partitioned table
+SELECT DISTINCT VendorID 
+FROM nytaxi.yellow_2024_partitioned
+WHERE tpep_dropoff_datetime BETWEEN '2024-03-01' AND '2024-03-15';

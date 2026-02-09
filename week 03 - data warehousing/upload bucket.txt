@@ -1,0 +1,3 @@
+upload my bucket
+
+gsutil -m cp ~/taxi_data/*.parquet gs://zoomcamp-2026-nytaxi-data/yellow_tripdata/

@@ -1,0 +1,8 @@
+# create folder
+mkdir -p ~/taxi_data
+
+# Download all month in 2024
+cd ~/taxi_data
+for month in 01 02 03 04 05 06; do
+  wget https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-${month}.parquet
+done

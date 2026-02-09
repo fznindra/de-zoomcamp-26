@@ -1,0 +1,1 @@
+bq mk --dataset --location=US zoomcamp-2026-486207:nytaxi

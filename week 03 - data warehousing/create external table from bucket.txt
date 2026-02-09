@@ -1,0 +1,5 @@
+CREATE OR REPLACE EXTERNAL TABLE nytaxi.external_yellow_2024
+OPTIONS (
+  format = 'PARQUET',
+  uris = ['gs://zoomcamp-2026-nytaxi-data/yellow_tripdata/yellow_tripdata_2024-*.parquet']
+);

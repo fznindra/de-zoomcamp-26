@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM nytaxi.yellow_2024_materialized;
