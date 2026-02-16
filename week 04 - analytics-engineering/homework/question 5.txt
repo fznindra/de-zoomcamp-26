@@ -1,0 +1,5 @@
+SELECT SUM(total_monthly_trips) AS total_trips
+FROM zoomcamp-2026-486207.nytaxi.fct_monthly_zone_revenue
+WHERE service_type = 'Green'
+AND EXTRACT(YEAR FROM month) = 2019
+AND EXTRACT(MONTH FROM month) = 10;

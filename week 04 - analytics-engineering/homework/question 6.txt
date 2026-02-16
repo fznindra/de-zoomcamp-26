@@ -1,0 +1,3 @@
+SELECT COUNT(*) AS record_count
+FROM zoomcamp-2026-486207.nytaxi.stg_fhv_tripdata
+WHERE dispatching_base_num IS NOT NULL;
