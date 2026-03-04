@@ -1,0 +1,5 @@
+SELECT 
+	MIN(trip_pickup_date_time) as min_date,
+	MAX(trip_pickup_date_time) as max_date
+FROM 
+	nyc_taxi.taxi_trips;

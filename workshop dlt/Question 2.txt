@@ -1,0 +1,4 @@
+SELECT 
+    	ROUND(100.0 * SUM(CASE WHEN payment_type = 'Credit' THEN 1 ELSE 0 END) / COUNT(*), 2) as credit_pct
+FROM 
+	nyc_taxi.taxi_trips;

@@ -1,0 +1,4 @@
+SELECT 
+	CAST(SUM(tip_amt) AS NUMERIC(19,2)) AS total_tips
+FROM 
+	nyc_taxi.taxi_trips;
