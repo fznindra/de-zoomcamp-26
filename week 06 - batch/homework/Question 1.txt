@@ -1,0 +1,8 @@
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder \
+    .appName("Homework6") \
+    .master("local[*]") \
+    .getOrCreate()
+
+print(f"Spark version: {spark.version}")
